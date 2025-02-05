@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninja's Image Editor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ninja's Image Editor</h1>
+    
+    <div class="editor-container">
+      <!-- Filters Section -->
+      <div class="filters-section">
+        <h2>Filters</h2>
+        <div class="filter-group">
+          <label for="brightness">Brightness:</label>
+          <input type="range" id="brightness" min="0" max="200" value="100">
+        </div>
+        <div class="filter-group">
+          <label for="saturation">Saturation:</label>
+          <input type="range" id="saturation" min="0" max="200" value="100">
+        </div>
+        <div class="filter-group">
+          <label for="grayscale">Grayscale:</label>
+          <input type="range" id="grayscale" min="0" max="200" value="0">
+        </div>
+        <div class="filter-group">
+          <label for="inversion">Inversion:</label>
+          <input type="range" id="inversion" min="0" max="200" value="0">
+        </div>
+
+        <!-- Rotation and Flip Section -->
+        <h2>Rotate & Flip</h2>
+        <div class="rotation-buttons">
+          <button id="left">⟲ </button>
+          <button id="right">⟳</button>
+          <button id="horizontal">↔</button>
+          <button id="vertical">↕ </button>
+        </div>
+      </div>
+
+      <!-- Preview Section -->
+      <div class="preview-section">
+        <h2>Image Preview</h2>
+        <div class="preview-container">
+          <img id="preview" src="" alt="Image preview">
+        </div>
+        <div class="upload-controls">
+          <button id="chooseImageButton">Choose Image</button>
+          <input type="file" id="fileInput" accept="image/*">
+        </div>
+        <div class="action-buttons">
+          <button id="saveBtn">Save Image</button>
+          <button id="resetBtn">Reset Filters</button>
+          <button id="cancelBtn">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e46d4f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow:#070707;
+  }
+  
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.459);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #141414;
+    margin-bottom: 20px;
+  }
+  
+  .editor-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .filters-section {
+    flex: 1;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.219);
+  }
+  
+  .filters-section h2 {
+    margin-bottom: 10px;
+    color: #3d3d3d;
+  }
+  
+  .filter-group {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  .filter-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  .rotation-buttons {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .preview-section {
+    flex: 1;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.219);
+  }
+  
+  .preview-container {
+    width: 100%;
+    height: 300px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .preview-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+  
+  .upload-controls {
+    margin-bottom: 20px;
+  }
+  
+  #chooseImageButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
